@@ -14,7 +14,7 @@ class CreateProductosTable extends Migration{
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->increments('idproducto');
-            $table->string('producto');
+            $table->text('producto');
             $table->string('tipo');
             $table->date('caducidad');
             $table->integer('marca_id')->unsigned();

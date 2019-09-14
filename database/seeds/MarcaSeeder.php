@@ -13,7 +13,8 @@ class MarcaSeeder extends Seeder
     {
     	\DB::insert("INSERT INTO marcas (marca,pais) VALUES 
     	('Nike','EEUU'),
-    	('Adidas','EEUU')");
+    	('Adidas','EEUU'),
+        ('Bags','China')");
         
     }
 }

@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user', 'UserController@index');
+Route::post('/user/post', 'UserController@store');
+
+//rutas para la prueba del taller
+Route::get('/marca/index', 'MarcaController@index');
+Route::get('/marca/create', 'MarcaController@create');
+Route::post('/marca/store', 'MarcaController@store');
+

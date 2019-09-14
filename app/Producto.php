@@ -18,4 +18,10 @@ class Producto extends Model
     	return $this->belongsTo('App\Marca', 'marca_id');
     } 
 
+    //casting json a array
+    protected $casts = [
+        'producto' => 'array', 
+    ];
+    
+
 }

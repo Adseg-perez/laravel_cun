@@ -6,7 +6,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Producto::class, function (Faker $faker) {
     return [
-        'producto' => $faker->state,
+        'producto' => $faker->creditCardDetails,
         'tipo' => $faker->jobTitle,
         'caducidad' => $faker->date,
         'marca_id' => function() {
